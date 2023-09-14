@@ -10,8 +10,8 @@ YOUTUBE[LINK](https://youtu.be/z1UMKqMN3VQ)
 > This is a work-in-progress and not the finished product.
 >
 ## COURSE DETAIL	
--	[1.0 Setup Project]
--	Authentication and Send Email
+-	[✓	1.0 Setup Project]
+-	[✓	2.0 Authentication and Send Email]
 -	Authentification Frontend
 -	Header  Component
 -	Home Page
