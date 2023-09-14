@@ -2,37 +2,25 @@
   "$schema": "https://turborepo.org/schema.json",
   "globalDependencies": ["**/.env"],
   "pipeline": {
-    "web":{},
-    "topo": {
-      "dependsOn": ["^topo"]
-    },
-    "build": {
-      "dependsOn": ["^build" ],
-      "outputs": [".next/**", "!.next/cache/**", "next-env.d.ts", ".expo/**","build/**"]
-    },
-    "dev": {
-      "persistent": true,
-      "cache": false
-    },
-    "format": {
-      "outputs": ["node_modules/.cache/.prettiercache"],
-      "outputMode": "new-only"
-    },
-    "lint": {
-      "dependsOn": ["^topo"],
-      "outputs": ["node_modules/.cache/.eslintcache"]
-    },
-    "typecheck": {
-      "dependsOn": ["^topo"],
-      "outputs": ["node_modules/.cache/tsbuildinfo.json"]
-    },
-    "clean": {
-      "cache": false
-    },
-    "//#clean": {
-      "cache": false
-    }
-  },
+		"web": {},
+		"topo": {
+			"dependsOn": ["^topo"]
+		},
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": [
+				"dist/**",
+				"!.next/cache/**",
+				"next-env.d.ts",
+				".expo/**",
+				"build/**"
+			]
+		},
+		"dev": {
+			"persistent": true,
+			"cache": false
+		}
+	},
   "globalEnv": [
   ]
 }
